@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="76dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:id="@+id/back_quiz"
+            android:background="@color/NanjiGreen"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_quiz"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Q."
+                    android:textColor="#fabb0e"
+                    android:textSize="14.5dp" />
+
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="'난지'"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="14.5dp" />
+
+                <com.example.nayon.nanjicamp.widget.NanumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="는 "
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="14.5dp" />
+
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="난지와 난초를 아우르는"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="14.5dp" />
+
+                <com.example.nayon.nanjicamp.widget.NanumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="말이다?"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="14.5dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_quiz_o"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="#00ffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_quiz_o" />
+
+                <Space
+                    android:layout_width="70dp"
+                    android:layout_height="0dp" />
+
+                <ImageButton
+                    android:id="@+id/btn_quiz_x"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#00ffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_quiz_x" />
+
+
+            </LinearLayout>
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:id="@+id/nanumTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="* 하루에 한번 퀴즈의 정답을 맞출 수 있으며,       "
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="11dp" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:id="@+id/nanumTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:gravity="center"
+                android:text="  선물은 퀴즈의 정답을 맞출 시에만 제공됩니다."
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="11dp" />
+
+            <ImageButton
+                android:id="@+id/btn_quiz_next"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_quiz_next" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="110dp"
+        android:id="@+id/img_quiz_animal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

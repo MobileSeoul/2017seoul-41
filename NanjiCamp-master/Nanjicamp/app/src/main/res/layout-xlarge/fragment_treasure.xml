@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_treasure_left"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:background="#00ffffff"
+            android:paddingLeft="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_left" />
+
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <VideoView
+                android:id="@+id/video_treasure_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+
+        <ImageButton
+            android:id="@+id/btn_treasure_right"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:background="#00ffffff"
+            android:paddingRight="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_right" />
+
+
+    </LinearLayout>
+
+    <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+        android:id="@+id/txt_treasure_detail_1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="6"
+        android:textColor="#704116"
+        android:textSize="12dp"/>
+
+    <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/txt_treasure_detail_2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#704116"
+        android:layout_weight="6"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="23"
+        android:orientation="horizontal">
+        
+        <LinearLayout
+            android:layout_width="179dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            
+            <ImageView
+                android:layout_width="22dp"
+                android:id="@+id/icon_treasure_1"
+                android:layout_height="22dp"
+                android:src="@drawable/icon_treasure_1_1"
+                android:scaleType="fitCenter"/>
+
+            <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40"
+                android:id="@+id/txt_treasure_time"
+                android:textSize="20dp"
+                android:textColor="@color/NanjiTextGray"/>
+            <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/NanjiTextGray"
+                android:text="min"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="1.0dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:background="#DDDDDD"/>
+
+        <LinearLayout
+            android:layout_width="179dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:id="@+id/icon_treasure_2"
+                android:src="@drawable/icon_treasure_1_1"
+                android:scaleType="fitCenter"/>
+
+            <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40"
+                android:textColor="@color/NanjiTextGray"
+                android:id="@+id/txt_treasure_distance"
+                android:textSize="20dp"/>
+
+            <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="km"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="97"
+        android:orientation="vertical">
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/video_treasure_2"
+            android:layout_centerInParent="true" />
+
+        <ImageButton
+            android:layout_width="256dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="#00ffffff"
+            android:scaleType="fitCenter"
+            android:id="@+id/btn_treasure_start"
+            android:src="@drawable/btn_treasure_1"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

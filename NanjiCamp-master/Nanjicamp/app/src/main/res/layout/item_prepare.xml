@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.example.nayon.nanjicamp.widget.CustomLinearLayout
+        android:id="@+id/item_root_prepare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="340dp"
+            android:background="@drawable/background_reserve_3"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.example.nayon.nanjicamp.layout.MyVideoView
+                android:id="@+id/video_prepare"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                        android:id="@+id/txt_prepare_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:text="담요"
+                        android:textColor="@color/NanjiTextGray"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/icon_prepare_avail"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="25dp"
+                        android:scaleType="fitCenter" />
+
+                </LinearLayout>
+
+                <com.example.nayon.nanjicamp.widget.NanumTextView
+                    android:id="@+id/txt_prepare_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="울랄라우랄랄"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="11dp" />
+
+                <com.example.nayon.nanjicamp.widget.NanumTextView
+                    android:id="@+id/txt_prepare_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="느앙앙"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="11dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.example.nayon.nanjicamp.widget.CustomLinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="260dp"
+    android:layout_height="66dp">
+
+    <Button
+        android:layout_marginTop="19dp"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:text="로그아웃"
+        android:id="@+id/btn_nav_tail"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:background="#d6d6d6" />
+
+
+</LinearLayout>

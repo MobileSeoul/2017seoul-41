@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="76dp"
+    android:layout_marginBottom="70dp"
+    android:background="@color/NanjiGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/NanjiGray"
+        android:orientation="vertical">
+
+        <com.example.nayon.nanjicamp.widget.NanumTextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="예약 확인"
+            android:textColor="@color/NanjiTextGray"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/img_reserve_4_1"
+            />
+        <!--android:src="@drawable/img_reserve_4_1" -->
+
+
+        <com.example.nayon.nanjicamp.widget.NanumTextView
+            android:layout_width="match_parent"
+            android:textColor="@color/NanjiTextGray"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="할인수단 선택"
+            android:textSize="14dp" />
+
+
+        <ImageView
+            android:id="@+id/img_reserve_4_2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter" />
+        <!--android:src="@drawable/img_reserve_4_2"-->
+
+
+        <com.example.nayon.nanjicamp.widget.NanumTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="결제수단 선택"
+            android:textColor="@color/NanjiTextGray"
+            android:textSize="14dp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/img_reserve_4_3"
+            />
+        <!--android:src="@drawable/img_reserve_4_3"-->
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/img_reserve_4_4"/>
+        <!--android:src="@drawable/img_reserve_4_4"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp">
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_reserve_4_check" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="9dp"
+                android:text="결제 정보를 확인하였으며, 구매진행에 동의합니다."
+                android:textColor="#808284"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="256dp"
+            android:layout_height="56dp"
+            android:id="@+id/btn_reserve_4_next"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="#00ffffff"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_reserve_4_next" />
+
+
+    </LinearLayout>
+</ScrollView>

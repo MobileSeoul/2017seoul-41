@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="76dp"
+    android:layout_marginBottom="70dp"
+    >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/NanjiGray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/icon_sharing_face_1" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="m_jjakjji"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="11.5dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_sharing_circle_3" />
+
+                    <com.example.nayon.nanjicamp.widget.NanumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="나무젓가락"
+                        android:textColor="@color/NanjiTextGray"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="14dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#00ffffff"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_sharing_x" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="#00ffffff"
+                        android:src="@drawable/img_sharing_circle_2" />
+
+                    <com.example.nayon.nanjicamp.widget.NanumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="종이컵"
+                        android:textColor="@color/NanjiTextGray"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="14dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#00ffffff"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_sharing_x" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_sharing_circle_3" />
+
+                    <com.example.nayon.nanjicamp.widget.NanumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="부탄가스"
+                        android:textColor="@color/NanjiTextGray"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="14dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#00ffffff"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_sharing_x" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_sharing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/NanjiGray">
+
+
+        </android.support.v4.view.ViewPager>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/background_sharing_clicked"
+        android:background="#99000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/lay_sharing_clicked"
+        android:layout_width="270dp"
+        android:layout_height="400dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="3dp"
+            android:layout_marginLeft="109dp"
+            android:clickable="true"
+            android:id="@+id/btn_share_clicked_x"
+            android:src="@drawable/icon_sharing_x_card"
+            android:scaleType="fitCenter"
+            android:background="#00ffffff"/>
+
+        <ImageView
+            android:id="@+id/img_sharing_clicked"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_sharing_item1" />
+
+        <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="부탄가스"
+            android:id="@+id/txt_sharing_clicked"
+            android:textColor="@color/NanjiTextGray"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"/>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/img_sharing_barcode"
+            android:scaleType="fitCenter" />
+
+        <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+            android:id="@+id/nanumTextView"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:text="* 저장 시 매표소에서 물품 수령 가능합니다."
+            android:textColor="@color/NanjiTextGray"
+            android:textSize="10dp" />
+
+
+        <ImageButton
+            android:id="@+id/btn_share_clicked_save"
+            android:layout_width="255dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:background="#00ffffff"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_sharing_save" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

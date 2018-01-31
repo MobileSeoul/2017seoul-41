@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#55404041</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#8ff0f0f0</color>
+    <color name="colorLightGray">#dcf0f0f0</color>
+    <color name="NanjiGray">#eff0f2</color>
+    <color name="NanjiTextGray">#404041</color>
+    <color name="NanjiGreen">#57B694</color>
+    <color name="NanjiBackGreen">#AA58B795</color>
+</resources>

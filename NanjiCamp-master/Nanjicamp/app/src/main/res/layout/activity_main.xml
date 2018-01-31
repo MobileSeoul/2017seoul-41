@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.nayon.nanjicamp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <FrameLayout
+                android:id="@+id/fragment_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_intro">
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:id="@+id/lay_main_topbar_margin"
+            android:background="@color/colorWhite">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="26dp"
+            android:id="@+id/lay_main_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/nav_toggle"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_main_menu" />
+
+            <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                android:id="@+id/txt_main_topbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="난지소개"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="20dp" />
+
+
+            <ImageButton
+                android:id="@+id/btn_camera"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_sharing_camera" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_main_shadow_top"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/lay_main_topbar"
+            android:src="@drawable/background_shadow_top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:scaleType="fitXY"
+            android:id="@+id/img_main_shadow_bottom"
+            android:layout_above="@+id/lay_main_bottombar"
+            android:src="@drawable/background_shadow_bottom" />
+
+        <LinearLayout
+            android:id="@+id/lay_main_bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageButton
+                android:id="@+id/btn_main_intro"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_main_intro" />
+
+            <ImageButton
+                android:id="@+id/btn_main_reserve"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_main_reserve" />
+
+            <ImageButton
+                android:id="@+id/btn_main_treasure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_main_treasure" />
+
+            <ImageButton
+                android:id="@+id/btn_main_prepare"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_main_prepare" />
+
+            <ImageButton
+                android:id="@+id/btn_main_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_main_share" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawer_menu"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:scrollbars="vertical" />
+
+</android.support.v4.widget.DrawerLayout>

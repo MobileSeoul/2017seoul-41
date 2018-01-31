@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <com.example.nayon.nanjicamp.layout.MyVideoView
+        android:id="@+id/video_treasure"
+        android:layout_width="360dp"
+        android:layout_height="275dp"
+        android:layout_gravity="center" />
+
+    <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/txt_treasure"
+        android:textColor="@color/NanjiTextGray"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:text="1. 얄리얄리얄라성"/>
+
+</LinearLayout>

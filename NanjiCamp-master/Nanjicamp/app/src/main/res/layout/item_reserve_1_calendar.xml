@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/lay_calender"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/NanjiGreen"
+            android:id="@+id/back_calender_1"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@color/NanjiGreen"
+            android:visibility="invisible"
+            android:id="@+id/back_calender_2"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="45dp"
+        android:src="@drawable/icon_calendar_clicked"
+        android:visibility="invisible"
+        android:id="@+id/img_calender"
+        android:layout_height="45dp" />
+
+    <com.example.nayon.nanjicamp.widget.NanumTextView
+        android:gravity="center"
+        android:id="@+id/txt_calender"
+        android:layout_width="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:textColor="@color/NanjiTextGray"
+        android:text="4"/>
+
+    <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+        android:gravity="center"
+        android:id="@+id/txt_calender_clicked"
+        android:layout_width="30dp"
+        android:textColor="@color/colorWhite"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="30dp"
+        android:textSize="13dp"
+        android:text="4"/>
+
+</RelativeLayout>

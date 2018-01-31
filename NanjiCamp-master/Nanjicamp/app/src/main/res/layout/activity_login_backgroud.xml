@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video_login"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:id="@+id/lay_login_login"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                android:layout_width="35dp"
+                android:layout_height="16dp"
+                android:text="ID"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="1.0dp"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                android:id="@+id/nanumBoldTextView"
+                android:layout_width="35dp"
+                android:layout_height="16dp"
+                android:text="PW"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="1.0dp"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/icon_login_check" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:layout_width="190dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="7dp"
+                android:gravity="center_vertical"
+                android:text="자동로그인"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_login"
+            android:layout_gravity="center"
+            android:background="#00ffffff"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_login_login" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="15dp">
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:layout_width="190dp"
+                android:layout_height="16dp"
+                android:gravity="center"
+                android:text="ID/PW 찾기 | 회원가입"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <com.example.nayon.nanjicamp.widget.NanumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="난지캠프계정 안내"
+            android:textColor="@color/NanjiTextGray"
+            android:textSize="10dp" />
+        <TextView
+            android:layout_width="80dp"
+            android:textColor="#00ffffff"
+            android:layout_height="0.4dp"
+            android:background="@color/NanjiTextGray"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

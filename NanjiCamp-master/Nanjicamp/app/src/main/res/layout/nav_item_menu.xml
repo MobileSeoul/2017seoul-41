@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="260dp"
+    android:layout_height="50dp"
+    android:background="@color/colorWhite"
+    android:id="@+id/item_nav_menu">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/img_nav_menu"
+        android:src="@drawable/icon_navi_setting"/>
+
+    <com.example.nayon.nanjicamp.widget.NanumTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="설정"
+        android:id="@+id/txt_nav_menu"
+        android:textColor="@color/NanjiTextGray"
+        android:layout_gravity="center_vertical"
+        android:textSize="14dp"/>
+
+</LinearLayout>

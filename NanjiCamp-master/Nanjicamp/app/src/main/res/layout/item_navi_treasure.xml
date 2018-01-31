@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.example.nayon.nanjicamp.widget.CustomLinearLayout
+        android:id="@+id/item_root_navi_treasure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="240dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/background_reserve_3">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/img__navi_treasure"
+                android:layout_marginBottom="15dp"
+                android:layout_width="160dp"
+                android:layout_height="130dp" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:text="느앙앙"
+                android:id="@+id/txt_navi_treasure_1"
+                android:layout_width="wrap_content"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="12dp"
+                android:layout_margin="2dp"
+                android:layout_height="wrap_content"/>
+
+            <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                android:text="담요"
+                android:id="@+id/txt_navi_treasure_2"
+                android:layout_margin="2dp"
+                android:textSize="16dp"
+                android:textColor="@color/NanjiGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+    </com.example.nayon.nanjicamp.widget.CustomLinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.example.nayon.nanjicamp.widget.CustomLinearLayout
+        android:id="@+id/item_root_sharing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="295dp"
+            android:id="@+id/lay_sharing_card"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/img_sharing_1"
+                    android:src="@drawable/icon_sharing_face_1" />
+
+                <com.example.nayon.nanjicamp.widget.NanumTextView
+                    android:id="@+id/txt_sharing_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="dsddp"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="#AAAAAA" />
+
+            <ImageView
+                android:id="@+id/img_sharing_2"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_sharing_item2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="#AAAAAA" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:id="@+id/txt_sharing_2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="햇반"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:paddingLeft="70dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_sharing_star_selected" />
+
+            </LinearLayout>
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:id="@+id/txt_sharing_3"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="어제 남은 부탁가스"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="9dp" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:id="@+id/txt_sharing_4"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:text="어제 남은 부탁가스"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="9dp" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:id="@+id/txt_sharing_5"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:text="어제 남은 부탁가스"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="9dp" />
+
+
+        </LinearLayout>
+
+    </com.example.nayon.nanjicamp.widget.CustomLinearLayout>
+
+</LinearLayout>

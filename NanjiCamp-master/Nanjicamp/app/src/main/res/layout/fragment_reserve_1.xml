@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="76dp"
+    android:layout_marginBottom="70dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/calender_reserve"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="8dp"
+                    android:id="@+id/btn_calender_before"
+                    android:background="#00ffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_left" />
+
+                <com.example.nayon.nanjicamp.widget.NanumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginRight="110dp"
+                    android:text="6월"
+                    android:id="@+id/txt_calender_month"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="19dp" />
+
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="8dp"
+                    android:background="#00ffffff"
+                    android:id="@+id/btn_calender_next"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_right" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="일"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="12.5dp"/>
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="월"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="12.5dp"/>
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="화"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="12.5dp"/>
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="수"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="12.5dp"/>
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="0dp"
+                    android:text="목"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="12.5dp"/>
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="0dp"
+                    android:text="금"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="12.5dp"/>
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="토"
+                    android:gravity="center"
+                    android:textColor="@color/NanjiTextGray"
+                    android:textSize="12.5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/NanjiTextGray"/>
+
+            <GridView
+                android:id="@+id/grid_reserve"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:numColumns="7"></GridView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_reserve_date"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_below="@id/calender_reserve"
+            android:background="@drawable/background_reserve_date"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.nayon.nanjicamp.widget.NanumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="캠핑 시작"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:id="@+id/txt_reserve_1_start"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_reserve_date_next" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.nayon.nanjicamp.widget.NanumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="캠핑 종료"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <com.example.nayon.nanjicamp.widget.NanumBoldTextView
+                    android:id="@+id/txt_reserve_1_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/card_reserve_tent"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lay_reserve_date"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@+id/indicator_reserve_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_reserve_tent"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lay_reserve_num_tent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/indicator_reserve_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background_reserve_num"
+            android:orientation="horizontal">
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="텐트 수량"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#00ffffff"
+                android:elevation="3dp"
+                android:id="@+id/btn_reserve_1_tent_minus"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_reserve_minus" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="220dp"
+                android:id="@+id/txt_reserve_1_tent_num"
+                android:text="0"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:background="#00ffffff"
+                android:id="@+id/btn_reserve_1_tent_plus"
+                android:elevation="3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_reserve_plus" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_reserve_num_people"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lay_reserve_num_tent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/background_reserve_num"
+            android:orientation="horizontal">
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_reserve_1_people"
+                android:layout_alignBottom="@+id/txt_reserve_1_people"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:text="인원 수"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#00ffffff"
+                android:elevation="3dp"
+                android:id="@+id/btn_reserve_1_people_minus"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_reserve_minus" />
+
+            <com.example.nayon.nanjicamp.widget.NanumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="220dp"
+                android:text="0"
+                android:id="@+id/txt_reserve_1_people"
+                android:textColor="@color/NanjiTextGray"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/btn_reserve_1_people_plus"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:background="#00ffffff"
+                android:elevation="3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_reserve_plus" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_reserve_1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/lay_reserve_num_people"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="-텐트 중복 선택은 가능합니다"
+            android:textColor="@color/NanjiTextGray"
+            android:textSize="11.5dp" />
+
+        <TextView
+            android:id="@+id/txt_reserve_2"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/txt_reserve_1"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="30dp"
+            android:text="-몽골 텐트 구역은 입장료 별도로 발생됩니다."
+            android:textColor="@color/NanjiTextGray"
+            android:textSize="11.5dp" />
+
+        <TextView
+            android:id="@+id/txt_reserve_3"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/txt_reserve_2"
+            android:layout_marginLeft="30dp"
+            android:text="-인원 초과 시 추가요금 발생됩니다."
+            android:textColor="@color/NanjiTextGray"
+            android:textSize="11.5dp" />
+
+
+        <ImageButton
+            android:id="@+id/btn_reserve_next"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txt_reserve_3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:background="@drawable/btn_reserve_next"
+            android:scaleType="fitCenter" />
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/progress_calendar"
+            android:layout_marginTop="180dp"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

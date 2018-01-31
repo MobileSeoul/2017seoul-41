@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="76dp"
+    android:layout_marginBottom="70dp"
+    android:gravity="center">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_treasure"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/indicator_treasure"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+
+    <com.example.nayon.nanjicamp.widget.NanumTextView
+        android:id="@+id/nanumTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="* 하루에 한번 퀴즈의 정답을 맞출 수 있으며,       "
+        android:textColor="@color/NanjiTextGray"
+        android:textSize="11dp" />
+
+    <com.example.nayon.nanjicamp.widget.NanumTextView
+        android:id="@+id/nanumTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:gravity="center"
+        android:text="  선물은 퀴즈의 정답을 맞출 시에만 제공됩니다."
+        android:textColor="@color/NanjiTextGray"
+        android:textSize="11dp" />
+
+    <ImageButton
+        android:scaleType="fitCenter"
+        android:background="#00ffffff"
+        android:id="@+id/btn_treasure_next"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_treasure_next" />
+
+
+</LinearLayout>
